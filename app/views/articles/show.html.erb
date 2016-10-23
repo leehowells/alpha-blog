@@ -1,9 +1,13 @@
 <h1>Here is the Article you selected</h1>
 
 <p>
-  Title: <%= @article.title %>
+    Title: <%= @article.title %>
 </p>
 
 <p>
-  Description: <%= @article.description %>
+    Description: <%= @article.description %>
 </p>
+
+<p><%= link_to 'Edit This Article', edit_article_path(@article) %></p>
+<p>
+<%= link_to 'Back to Article Listings', articles_path %></p>
